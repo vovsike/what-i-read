@@ -10,5 +10,5 @@ public abstract class BookMapper {
 
     public abstract BookEntity toEntity(Book book);
 
-    public abstract Book toBook(BookEntity bookEntity);
+    public abstract BookFull toBook(BookEntity bookEntity);
 }

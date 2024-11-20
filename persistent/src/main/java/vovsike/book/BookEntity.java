@@ -1,6 +1,8 @@
 package vovsike.book;
 
-public class BookEntity {
+import vovsike.models.Book;
+
+public class BookEntity extends Book {
 
     private Long id;
 

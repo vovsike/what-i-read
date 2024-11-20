@@ -13,4 +13,6 @@ public interface BookRepository {
     Boolean exists(Long id);
 
     Boolean exists(Book book);
+
+    Book getBookByName(String name);
 }

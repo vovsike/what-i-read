@@ -41,5 +41,14 @@ public class BookRepositoryStub implements BookRepository {
         return true;
     }
 
+    @Override
+    public Book getBookByName(String name) {
+        BookEntity foundBook = new BookEntity();
+        foundBook.setId(1L);
+        foundBook.setAuthor("SomeAuthor");
+        foundBook.setTitle("SomeTitle");
+        return bookMapper.toBook(foundBook);
+    }
+
 
 }
